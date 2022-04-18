@@ -16,6 +16,35 @@ const Routes = [
     path: '/mine-sweeper',
     component: lazy(() => import('../../views/MineSweeper/MineSweeper'))
   },
+  {
+    path: '/forecast',
+    component: lazy(() => import('../../views/Forecast/Forecast'))
+  },
+  {
+    path: '/typography',
+    component: lazy(() => import('../../views/Typography'))
+  },
+  {
+    path: '/colors',
+    component: lazy(() => import('../../views/Colors'))
+  },
+  {
+    path: '/reactfeather',
+    component: lazy(() => import('../../views/Feathers'))
+  },
+  {
+    path: '/button',
+    component: lazy(() => import('../../views/Button'))
+  },
+  {
+    path: '/breadcrumb',
+    component: lazy(() => import('../../views/Breadcrumb'))
+  },
+  {
+    path: '/error',
+    component: lazy(() => import('../../views/Error')),
+    layout: 'BlankLayout'
+  }
 ]
 
 export { DefaultRoute, TemplateTitle, Routes }

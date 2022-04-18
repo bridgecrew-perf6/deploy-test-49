@@ -41,7 +41,7 @@ const VerticalLayout = props => {
   return (
     <div className="vertical-layout h-100 vertical-menu-modern menu-expanded navbar-floating footer-static">
       <div className="main-menu">
-        <h1 className="site-title">Kokonatsu</h1>
+        <h1 className="site-title">GiangDN</h1>
         <ul>
           {navigationItems.map((item) => (
             <li key={item.title}>
