@@ -1,0 +1,37 @@
+$violet: #7367f0;
+$blue: #4285F4;
+$red:  #DB4437;
+$yellow: #F4B400;
+$green: #0F9D58;
+$colors-list: $blue $red $yellow $green;
+
+.spinner-wrapper {
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  span {
+    display: inline-block;
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: $violet;
+    &:not(:first-child) { 
+      margin-left: 10px; 
+    }
+  }
+  @for $i from 1 through 4 {
+    $t: $i * -0.25;
+    span:nth-child(#{$i}) {
+      animation: move .7s ease-in-out (#{$t}s) infinite alternate;
+    }
+  }
+}
+
+@keyframes move {
+  from { transform: translateY(-10px); }
+  to { transform: translateY(5px); }
+}

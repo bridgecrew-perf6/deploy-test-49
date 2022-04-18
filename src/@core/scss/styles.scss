@@ -2,8 +2,11 @@
 @import './bases/typography.scss';
 @import './bases/reset.scss';
 @import './bases/utils.scss';
+
+@import './elements/spinner.scss';
 @import './elements/breadcrumb.scss';
 @import './elements/buttons.scss';
+
 @import './modules/components.scss';
 @import './modules/layout.scss';
 @import './modules/pages.scss';
